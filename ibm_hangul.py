@@ -9,7 +9,6 @@ from tensorflow.python.tools import freeze_graph
 from tensorflow.python.tools import optimize_for_inference_lib
 
 
-
 SCRIPT_PATH = os.path.dirname(os.path.abspath(__file__))
 
 # Default paths.
