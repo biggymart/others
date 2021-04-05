@@ -39,7 +39,7 @@ def _parse_function(example):
     label = features['image/class/label']
     image_encoded = features['image/encoded']
 
-    # Decode the JPEG.
+    # Decode the JPEG. 
     image = tf.image.decode_jpeg(image_encoded, channels=1)
     image = tf.image.convert_image_dtype(image, dtype=tf.float32)
     image = tf.reshape(image, [IMAGE_WIDTH*IMAGE_HEIGHT])
