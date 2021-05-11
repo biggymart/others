@@ -117,6 +117,8 @@ if __name__ == '__main__':
        np.save(os.path.join(DEFAULT_NPY_DIR, 'train_images.npy'), arr=train_images)
        np.save(os.path.join(DEFAULT_NPY_DIR, 'train_labels.npy'), arr=train_labels)
        model = make_model(train_images, train_labels)
+       if not os.path.exists(DEFAULT_MODEL_DIR):
+              os.makedirs(DEFAULT_MODEL_DIR)
        model.save(os.path.join(DEFAULT_MODEL_DIR, 'mymodel.h5'))
 
 # np.save('path.npy', arr=대상)
