@@ -13,7 +13,7 @@ from tensorflow.keras.callbacks import EarlyStopping, ReduceLROnPlateau
 
 ##### <CONSTANTS> #####
 """ Run img_gen.py file in tools subdirectory. AND
-You should have 2350-common-hangul.txt file in the specifed path below
+You should have 2350-common-hangul.txt file in the specified path below
 """
 # Default paths.
 SCRIPT_PATH = os.path.dirname(os.path.abspath(__file__)) # c:\Users\ai\PycharmProjects\group_proj
